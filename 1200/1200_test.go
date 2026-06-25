@@ -1,4 +1,4 @@
-package main
+package sortsort
 
 import (
 	"reflect"
@@ -6,7 +6,7 @@ import (
 )
 
 func TestMinAbsDifference(t *testing.T) {
-	var tests = []struct {
+	tests := []struct {
 		input []int
 		want  [][]int
 	}{
@@ -23,6 +23,6 @@ func TestMinAbsDifference(t *testing.T) {
 
 func BenchmarkMinimumAbsDifference(b *testing.B) {
 	for i := 0; i < b.N; i++ {
-		minimumAbsDifference([]int{ -467973, 725183, -256709, 879368, -246202, -339355, 151349})
+		minimumAbsDifference([]int{-467973, 725183, -256709, 879368, -246202, -339355, 151349})
 	}
 }

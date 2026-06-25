@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	maxballoons "leetcode/1189"
+
+	prefix "leetcode/0014"
 )
 
 func main() {
-	fmt.Println(maxballoons.MaxNumberOfBalloons("balloon"))
+	fmt.Println(prefix.LongestCommonPrefix([]string{"flower", "flxwer"}))
 }

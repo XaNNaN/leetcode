@@ -1,4 +1,4 @@
-package main
+package sortsort
 
 import (
 	"math"
